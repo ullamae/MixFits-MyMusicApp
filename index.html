@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MixFits</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <audio src="" id="audio-source"></audio>
+    <!--------- Home Section -------->
+
+    <section class="home-section">
+        <div class="carousel">
+            <img src="assets\images\image1.jpg" class="active" alt="">
+            <img src="assets\images/image2.png" alt="">
+            <img src="assets\images\image3.jpg" alt="">
+            <img src="assets\images\image4.jpg" alt="">
+            <img src="assets\images/image5.png" alt="">
+            <img src="assets\images/image6.png" alt="">
+            <img src="assets\images\image7.jpg" alt="">
+            <img src="assets\images\image8.jpg" alt="">
+            <img src="assets\images\image9.jpg" alt="">
+        </div>
+
+        <h1 class="heading">Recently Played</h1>
+        <div class="playlists-group">
+            <div class="playlists-card">
+                <img src="assets/images/international1.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Top International</p>                
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/worlds.jpeg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">League of Legends Music</p>                
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/opm90s.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">OPM Rock 90's</p>                
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/interantional3.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Favorites</p>                
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/image4.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">2016 Hits</p>                
+            </div>
+        </div>
+        <h1 class="heading">Based on your listening</h1>
+        <div class="playlists-group">
+            <div class="playlists-card">
+                <img src="assets/images/image3.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Top International</p>                
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/kda.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">League of Legends Music</p>                
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/ivos.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">OPM Rock 90's</p>                
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/international6.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Favorites</p>                
+            </div>
+            <div class="playlists-card">
+                <img src="assets/images/image9.jpg" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">2016 Hits</p>                
+            </div>
+        </div>
+    </section>
+
+    <section class="music-player-section">
+        <img src="assets/images/back.png" class="back-btn icon hide" alt="">
+        <img src="assets/images/nav.png" class="nav-btn icon hide" alt="">
+
+
+        <h1 class="current-song-name">Faded</h1>
+        <p class="artist-name hide">Alan Walker</p>
+
+        <img src="./assets/images/international5.jpg" class="cover hide" alt="">
+
+        <div class="seek-bar-container">
+            <input type="range" class="music-seek-bar" value="0">
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00</p>
+        </div>
+
+        <div class="controls">
+            <span class="fas fa-redo"></span>
+            <div class="main">
+                <i class="fas fa-backward active"></i>
+                <i class="fas fa-play active"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-forward active"></i>
+            </div>
+            <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+            <span class="fas fa-volume-up"></span>
+        </div>
+    </section>
+
+    <section class="playlist">
+        <img src="assets/images/back.png" class="back-btn icon" alt="">
+
+        <h1 class="title">Playlist</h1>
+
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="assets/images/international5.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Hello</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/international2.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Faded</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image5.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Dangerous Woman</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image1.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Dangerously</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image6.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">We Don't Talk Anymore</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/international6.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Panda</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image2.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Middle</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image7.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Cake By The Ocean</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/interantional3.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">One Dance</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/international1.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Hotline Bling</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/international6.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Work From Home</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image3.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Can I Be Him</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image8.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Love Yourself</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image6.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Sorry</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/international2.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Can't Stop The Feeling</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/international4.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">7 Years</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/interantional3.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Alone</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image5.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">In The Name Of Love</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image9.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">One Call Away</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image4.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">History</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/international2.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">White Iverson</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image5.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Work</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image4.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Hands To Myself</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/international5.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Treat You Better</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/international6.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Closer</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/interantional3.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Don't Let Me Down</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image4.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Roses</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image2.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Starboy</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image6.png" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Heathens</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/image7.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Ride</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/international5.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Pillowtalk</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/arcane.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Playground</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/arcane.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Dirty Little Animals</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/worlds.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Burn It All Down</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/arcane.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Dynasties & Dystopia</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/arcane.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Enemy</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/worlds.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">GODS</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/worlds.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Ignite</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/kda.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">More</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/kda.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Popstars</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/kda.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">The Baddest</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/kda.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Villain</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/worlds.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Legends Never Die</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/worlds.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Star Walkin'</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/arcane.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Snakes</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/worlds.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Phoenix</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/arcane.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Misfit Toys</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/worlds.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Rise</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/worlds.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Take Over</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/truedamage.jpg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">True Damage</p>
+        </div>
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="assets/images/worlds.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Warriors</p>
+        </div>
+
+
+
+        </div>
+
+    </section>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
